@@ -8,7 +8,6 @@ public class SavingAccount {
         double interest = balance * interestRate;
         balance += interest;
 
-        System.out.println("Interest added: " + interest);
         System.out.println("New balance: " + balance);
     }
 }
