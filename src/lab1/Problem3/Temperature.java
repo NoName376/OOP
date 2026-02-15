@@ -66,10 +66,16 @@ public class Temperature
 
     public void setScale(char scale) 
     {
-        if (scale == 'C' || scale == 'F') 
+        if (scale == 'C') 
         {
-            this.scale = scale;
-        } 
+        		this.value = getDegreesC();
+        		this.scale = scale;
+        }
+        else if (scale == 'F')
+        {
+        		this.value = getDegreesF();
+        		this.scale = scale;
+        }
         else 
         {
             System.out.println("Error: Invalid scale " + scale);
@@ -78,8 +84,8 @@ public class Temperature
 
     public void setValueAndScale(double value, char scale) 
     {
+    		setScale(scale);
         setValue(value);
-        setScale(scale);
     }
 
     public char getScale() 

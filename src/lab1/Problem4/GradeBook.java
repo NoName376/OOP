@@ -18,7 +18,7 @@ public class GradeBook
 
     public boolean tryAddStudent(Student s, int grade) 
     {
-        if (s != null && grade > 0 && grade < 100) 
+        if (s != null && grade >= 0 && grade <= 100) 
         {
         		students.add(s);
             grades.add(grade);

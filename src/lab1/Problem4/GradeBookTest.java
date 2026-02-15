@@ -10,7 +10,7 @@ public class GradeBookTest
         Course course = new Course("CS101", "Object-oriented Programming and Design", 5, null);
          
         GradeBook book = new GradeBook(course);
-     
+             
         Student[] studentsGroup = 
         	{
         		new Student("Student A", "1"),

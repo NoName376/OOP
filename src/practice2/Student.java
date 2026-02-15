@@ -1,9 +1,9 @@
 package practice2;
 
 public class Student {
-    String name;
-    String id;
-    int year;
+    private String name;
+    private String id;
+    private int year;
 
     public Student(String name, String id) {
         this.name = name;

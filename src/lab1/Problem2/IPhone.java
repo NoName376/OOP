@@ -8,7 +8,7 @@ public class IPhone
     }
 
     public static final String BRAND = "Apple";
-    public static final String OS_NAME = "iOS";
+    public static final String OS_NAME = "IOS";
     
     private static int totalIPhonesProduced = 0;
     private static String latestIOSVersion = "26.2.1";
@@ -17,6 +17,7 @@ public class IPhone
 
     private String model;
     private int memoryGb;
+    private String wallpaper;
     
     private State currentState;
 
@@ -45,34 +46,34 @@ public class IPhone
     
     public void unlock(String touchHash) 
     {
-    	if(touchHash.equals("dsgbq3y8o4f9mu023ip"))
-    	{
-    		this.currentState = State.UNLOCKED;
-            System.out.println("TouchID recognized owner.");
-    	}
-    	else
-    	{
-    		System.out.println("Wrong Passcode. Try again in 1 minute.");
-            this.currentState = State.LOCKED;
-    	}
+    		if(touchHash.equals("dsgbq3y8o4f9mu023ip"))
+    		{
+    			this.currentState = State.UNLOCKED;
+           	System.out.println("TouchID recognized owner.");
+    		}
+    		else
+    		{
+    			System.out.println("Wrong Passcode. Try again in 1 minute.");
+    			this.currentState = State.LOCKED;
+    		}
     }
 
     public void unlock(int password) 
     {
-        if (password == 1234) 
-        { 
-            this.currentState = State.UNLOCKED;
-            System.out.println("Passcode correct. Unlocked.");
-        } 
-        else 
-        {
-            System.out.println("Wrong Passcode. Try again in 1 minute.");
-            this.currentState = State.LOCKED;
+        if (password == 1234) {
+        		this.currentState = State.Unlocked;
+        }
+        else {
+        		
         }
     }
     
     public long getImei() { return imei; }
     public State getCurrentState() { return currentState; }
+    
+    public String getWallpaper() { return wallpaper; }
+    public void setWallpaper(String value) { wallpaper = value; }
+   
     
  
     public static int getTotalIPhonesProduced() { return totalIPhonesProduced; }
