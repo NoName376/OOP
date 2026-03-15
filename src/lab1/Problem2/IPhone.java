@@ -61,7 +61,7 @@ public class IPhone
     public void unlock(int password) 
     {
         if (password == 1234) {
-        		this.currentState = State.Unlocked;
+        		this.currentState = State.UNLOCKED;
         }
         else {
         		
