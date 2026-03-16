@@ -3,7 +3,7 @@ package lab2.Problem5;
 public class PhDStudentPetPolicy implements PetPolicy {
 	@Override
 	public boolean canAcceptPet(Animal pet) {
-		return !(pet instanceof Dog);
+		return !(pet instanceof Cat);
 	}
 
 	@Override

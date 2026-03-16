@@ -8,7 +8,7 @@ public class Restaurant {
         this.menu = new Vector<>();
 
         for (var m: menu) {
-        		this.menu.add(name);
+        		this.menu.add(m);
         }
     }
 
