@@ -2,8 +2,8 @@ package lab2.Problem1.PartC;
 
 public class TestWeapon {
     public static void main(String[] args) {
-        Sword katana1 = new Sword("Katana", 45, 75.5);
-        Sword katana2 = new Sword("Katana", 45, 75.5);
+        var katana1 = new Sword("Katana", 45, 75.5);
+        var katana2 = new Sword("Katana", 45, 75.5);
 
         System.out.println(katana1);
         
